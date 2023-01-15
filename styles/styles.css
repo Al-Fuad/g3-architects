@@ -1,0 +1,280 @@
+/*~~~~~~~~~~
+    Fonts
+~~~~~~~~~~*/
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@100;200;300;400;500;600;700&display=swap');
+/*~~~~~~~~~~
+    Common
+~~~~~~~~~~*/
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    font-family: 'Work Sans', sans-serif;
+    padding-bottom: 180px;
+}
+.primary-margin{
+    margin: 0 160px;
+}
+.primary-btn{
+    background-color: #FF900E;
+    border: 0;
+    color: #FFFFFF;
+    border-radius: 6px;
+    height: 47px;
+    width: 125px;
+    font-weight: 600;
+    font-size: 14px;
+    margin: 25px 0;
+}
+.primary-p{
+    color: #727272;
+    font-size: 11.2px;
+    line-height: 1.6;
+}
+.primary-h1{
+    font-size: 30px;
+    margin-bottom: 25px;
+}
+.flex{
+    display: flex;
+}
+/*~~~~~~~~~~~
+    Header
+~~~~~~~~~~~*/
+header{
+    background: rgba(255, 144, 14, 0.1);
+    padding: 30px 0;
+}
+.navbar{
+    justify-content: space-between;
+    align-items: center;
+}
+nav ul{
+    gap: 55px;
+}
+nav li{
+    list-style: none;
+}
+nav li a{
+    font-size: 12px;
+    text-decoration: none;
+    color: #424242;
+    padding: 10px;
+}
+nav li a:hover{
+    color: #FFFFFF;
+    background-color: #FF900E;
+    border-radius: 5px;
+}
+.navbar h2{
+    color: #131313;
+    font-size: 30px;
+}
+.banner{
+    margin-top: 65px;
+    text-align: center;
+}
+.banner h1{
+    font-weight: 700;
+    font-size: 45px;
+    margin-bottom: 20px;
+}
+.banner img{
+    width: 100%;
+}
+
+/*~~~~~~~~~~~~~~
+    Features
+~~~~~~~~~~~~~~*/
+.features{
+    display: grid;
+    margin: 60px 215px 0;
+    grid-template-columns: 1fr 1fr 2fr;
+    grid-gap: 17px;
+    grid-template-areas:
+    "img-1 img-2 feature-info"
+    "img-3 img-4 feature-info"
+    ;
+}
+.features img{
+    width: 245px;
+}
+.features-info{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-area: feature-info;
+    margin-left: 30px;
+}
+.features-info h2{
+    font-size: 28px;
+    margin-bottom: 20px;
+}
+
+#img-1{
+    grid-area: img-1;
+}
+#img-2{
+    grid-area: img-2;
+}
+#img-3{
+    grid-area: img-3;
+}
+#img-4{
+    grid-area: img-4;
+}
+
+/*~~~~~~~~~~~~~~~~~~~
+    Key Features
+~~~~~~~~~~~~~~~~~~~*/
+.key-features{
+    gap: 90px;
+    margin-top: 90px;
+}
+.special-div h1{
+    border-left: 4px solid #FF900E;
+    font-size: 30px;
+    padding-left: 15px;
+    margin-bottom: 25px;
+}
+.normal-div{
+    margin-top: 15px;
+    padding: 25px 50px 24px 25px;
+    box-shadow: 0px 6px 50px rgba(0, 0, 0, 0.06);
+    border-radius: 5px;
+}
+.normal-div h5{
+    padding-left: 3px;
+    margin-bottom: 12px;
+    font-weight: 600;
+}
+.key-features img{
+    width: 505px;
+}
+.special-btn{
+    color: #FFFFFF;
+    background-color: #FF900E;
+    border: 0;
+    border-radius: 5px;
+    height: 140px;
+    width: 230px;
+    position: relative;
+    bottom: 115px;
+    left: 635px;
+}
+.special-btn h1{
+    font-size: 43px;
+    margin-bottom: 2px;
+}
+.special-btn p{
+    font-size: 17px;
+}
+
+/*~~~~~~~~~~~
+    Facts
+~~~~~~~~~~~*/
+.facts p{
+    margin-bottom: 80px;
+}
+.fact{
+    justify-content: space-around;
+}
+.box{
+    text-align: center;
+    width: 140px;
+    height: 140px;
+    border: 1px solid #FF900E;
+    border-radius: 5px;
+    margin-bottom: 150px;
+    padding: 40px 20px 0px;
+}
+.box h4{
+
+}
+.box p{
+
+}
+.box:hover{
+    color: #FFFFFF;
+    background-color: #FF900E;
+}
+
+/*~~~~~~~~~~~~~~~
+    Sponspors
+~~~~~~~~~~~~~~~~*/
+.sponspors{
+    text-align: center;
+    margin-bottom: 120px;
+}
+.sponspors p{
+    margin-bottom: 40px;
+}
+.sponspor{
+    justify-content: space-between;
+}
+.sponspor img{
+    height: 40px;
+    -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+    filter: grayscale(100%);
+}
+
+/*~~~~~~~~~~~~
+    Footer
+~~~~~~~~~~~~~*/
+footer{
+    text-align: center;
+    color: #424242;
+    background: rgba(255, 144, 14, 0.1);
+    padding: 20px;
+}
+
+/*~~~~~~~~~~~~~~~~
+    Responsive
+~~~~~~~~~~~~~~~~*/
+@media screen and (max-width:576px) {
+    body{
+        padding-bottom: 20px;
+    }
+    .features{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        "img-1"
+        "img-2"
+        "img-3"
+        "img-4"
+        "feature-info"
+        ;
+    }
+    .features img{
+        width: 100%;
+    }
+    .company-name, .primary-margin, .features, .box, .facts, .facts p, .fact, .sponspor img{
+        margin: 20px;
+    }
+    .key-features, .fact, .sponspor, .navbar, nav ul{
+        flex-direction: column;
+        align-items: center;
+    }
+    .key-features img{
+        width: 90%;
+    }
+    .special-btn{
+        position:inherit;
+        background-color: #FF900E;
+        border: 0;
+        color: #FFFFFF;
+        border-radius: 6px;
+        height: 47px;
+        width: 125px;
+        margin: 0 0 0 40px;
+    }
+    .special-btn h1{
+        font-size: 18px;
+        font-weight: 600;
+    }
+    .special-btn p{
+        font-size: 12px;
+        font-weight: 400;
+    }
+}
