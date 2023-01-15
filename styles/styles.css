@@ -13,6 +13,9 @@ body{
     font-family: 'Work Sans', sans-serif;
     padding-bottom: 180px;
 }
+.hide{
+    display: none;
+}
 .primary-margin{
     margin: 0 160px;
 }
@@ -38,6 +41,9 @@ body{
 }
 .flex{
     display: flex;
+}
+button:hover, a, .box:hover{
+    cursor: pointer;
 }
 /*~~~~~~~~~~~
     Header
@@ -188,14 +194,16 @@ nav li a:hover{
     border-radius: 5px;
     margin-bottom: 150px;
     padding: 40px 20px 0px;
+    transition: width 1s, color 1s, background-color 1s;
 }
 .box h4{
-
+    font-size: 30px;
 }
 .box p{
-
+    font-size: 15px;
 }
 .box:hover{
+    width: 200px;
     color: #FFFFFF;
     background-color: #FF900E;
 }
